@@ -21,6 +21,6 @@ export default {
         return apiClient.post('/events', event)
     },
     getEventByKeyword(keyword, perPage, page) {
-        return apiClient.get(+'events?_limit=' + perPage + '&_page=' + page + '&title=' + keyword)
+        return apiClient.get('events?_limit=' + perPage + '&_page=' + page + '&title=' + keyword)
     }
 }
